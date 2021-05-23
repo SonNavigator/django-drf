@@ -63,6 +63,10 @@ Check git version on
 - git --version
 >>> git version 2.24.1.windows.2
 
+Configure GitHub Credentials
+- git config ––global user.name "github_username"
+- git config ––global user.email "email_address"
+
 # Then
 - git init
 
