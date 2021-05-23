@@ -1,0 +1,80 @@
+# Create a folder to store our project
+mkdir restframework
+
+# ชี้ไปที่โฟลเดอร์ที่สร้างขึ้นมา
+cd restframework
+
+# สร้าง virtual environment ชื่อว่า env
+python -m venv env
+
+# Activate (เรียกใช้งาน) virtual environment (Windows)
+env/Scripts/activate
+
+# Virtual env ถูก activate และพร้อมใช้งาน
+(env) project
+
+
+# Database connection
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dbtest',
+        'USER': 'postgres',
+        'PASSWORD': '1234',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+}
+
+
+# Update tables
+python manage.py makemigrations
+
+# Migrate a database
+python manage.py migrate
+
+# Accessing an admin site by creating superuser
+python manage.py createsuperuser
+python manage.py runserver
+
+# Quick test query data from our database
+python manage.py shell
+
+
+# Model serialization
+# Create a file called serializers.py in our app directory
+from rest_framework import serializers
+from .models import Model
+
+# Views (business logic)
+from .models import Model
+from .serializers import ModelSerializer
+
+
+# Register URLs (endpoints)
+- Go to urls.py (project)
+- Design your desired endpoints
+
+
+# Uploading sourcecode to GitHub
+- git init
+# Check a username
+- git config --global --get user.name
+
+Create a ".gitignore" file
+- git add -all
+- git commit -m "First commit"
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
