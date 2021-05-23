@@ -79,7 +79,10 @@ Create a ".gitignore" file
 
 Copy the project's URL from GitHub
 - git remote add origin <URL>
-- git push -u origin master
+- git push -u origin master (Only first time)
+
+After that when updating source code
+- git push
 
 
 
