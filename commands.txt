@@ -57,8 +57,16 @@ from .serializers import ModelSerializer
 
 
 # Uploading sourcecode to GitHub
+# Make sure that you already install Git on your local computer first
+# If finished installing
+Check git version on
+- git --version
+>>> git version 2.24.1.windows.2
+
+# Then
 - git init
-# Check a username
+
+Check a username
 - git config --global --get user.name
 
 Create a ".gitignore" file
