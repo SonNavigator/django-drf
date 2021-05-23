@@ -8,6 +8,7 @@ class Task(models.Model):
     created_on = models.DateField(auto_now_add=True)  # Auto timestamp
     complete = models.BooleanField(default=False)
 
+    # Convert an object to readable string
     def __str__(self):
         return self.title
 

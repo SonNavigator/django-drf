@@ -62,9 +62,12 @@ from .serializers import ModelSerializer
 - git config --global --get user.name
 
 Create a ".gitignore" file
-- git add -all
+- git add --all
 - git commit -m "First commit"
--
+
+Copy the project's URL from GitHub
+- git remote add origin <URL>
+- git push -u origin master
 
 
 
